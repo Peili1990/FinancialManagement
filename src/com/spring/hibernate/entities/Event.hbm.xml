@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 3, 2015 8:38:51 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.spring.hibernate.entities.Event" table="EVENT">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="date" type="java.lang.String">
+            <column name="date" />
+        </property>
+        <property name="account" type="java.lang.String">
+            <column name="account" />
+        </property>
+        <property name="expense_name" type="java.lang.String">
+            <column name="expense_name" />
+        </property>
+        <property name="bank_account" type="java.lang.String">
+            <column name="bank_account" />
+        </property>
+        <property name="pay_method" type="java.lang.String">
+            <column name="pay_method" />
+        </property>
+        <property name="debit" type="double">
+            <column name="debit" />
+        </property>
+        <property name="credit" type="double">
+            <column name="credit" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        <property name="remark" type="java.lang.String">
+            <column name="remark" />
+        </property>
+        <property name="project_id" type="int">
+            <column name="project_id" />
+        </property>
+        <property name="isPublic" type="int">
+            <column name="isPublic" />
+        </property>
+    </class>
+</hibernate-mapping>

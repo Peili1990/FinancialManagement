@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 5, 2015 10:50:46 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.spring.hibernate.entities.Bankaccountevent" table="BANKACCOUNTEVENT">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="date" type="java.lang.String">
+            <column name="date" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        <property name="debit" type="double">
+            <column name="debit" />
+        </property>
+        <property name="credit" type="double">
+            <column name="credit" />
+        </property>
+        <property name="bank_account" type="java.lang.String">
+            <column name="bank_account" />
+        </property>
+        <property name="pay_method" type="java.lang.String">
+            <column name="pay_method" />
+        </property>
+    </class>
+</hibernate-mapping>
